@@ -1,0 +1,67 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+}
+.rightSide{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(134, 6, 134);
+}
+.leftSide{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(207, 21, 207);   
+}
+.formulario{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 21, 207);
+    border-radius: 20px;
+}
+.formulario button{
+    width: 80px;
+    background-color: purple;
+    color: white;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: medium;
+}
+.inputs{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2px;
+}
+.inputs input, textarea{
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.error{
+    font-size: small;
+    color: red;
+}

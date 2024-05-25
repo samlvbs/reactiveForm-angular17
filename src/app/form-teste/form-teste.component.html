@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="leftSide">
+        <h1>Formulario teste utilzando reactive forms do Angular 17</h1>
+    </div>
+    <div class="rightSide">
+        <div class="formulario">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <!-- nome -->
+                <div class="inputs">
+                    <label for="name">Nome</label>
+                    <input id="name" formControlName="name">
+                    <div class="error" *ngIf="form.controls['name'].invalid && form.controls['name'].touched">Nome precisa ser preenchido
+                    </div>  
+                </div>
+                <!-- email -->
+                <div class="inputs">
+                    <label for="name">E-mail</label>
+                    <input id="email" formControlName="email">
+                    <div class="error" *ngIf="form.controls['email'].invalid && form.controls['email'].touched">E-mail inválido </div>
+                </div>
+                <!-- message -->
+                <div class="inputs">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" formControlName='message'></textarea>
+                </div>
+                <!-- button -->
+                <div class="inputs">
+                    <button type="submit" [disabled]="form.invalid">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+</div>
+
